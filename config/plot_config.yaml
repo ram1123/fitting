@@ -1,0 +1,23 @@
+year: 2022preEE
+control_region: z-peak
+directoryTag: March24_MeanWidthConstant
+
+input_paths_labels:
+  # Data
+  "BSC ON": "/depot/cms/users/shar1172/hmm/copperheadV1clean/Run3_nanoAODv12_BSOn_UpdateMassCalib/stage1_output/2022preEE/f1_0/data_*/*/*.parquet"
+  # "BSC OFF": "/depot/cms/users/shar1172/hmm/copperheadV1clean/Run2_nanoAODv12_12March_NoGeoNoBSC//stage1_output/2022preEE/f1_0/data_*/*/*.parquet"
+  # Signal
+  # "BSC ON": "/depot/cms/users/shar1172/hmm/copperheadV1clean/Run3_nanoAODv12_BSOn/stage1_output/2022preEE/f1_0/ggh_powhegPS/0/*.parquet"
+  # "BSC OFF": "/depot/cms/users/shar1172/hmm/copperheadV1clean/Run2_nanoAODv12_12March_NoGeoNoBSC//stage1_output/2022preEE/f1_0/ggh_powhegPS/0/*.parquet"
+
+plot_types:
+  fit_z_peak: true
+  fit_signal: false
+
+fit_categories:
+  z-peak:
+    binned: false
+    unbinned: true
+  signal:
+    binned: false
+    unbinned: false
